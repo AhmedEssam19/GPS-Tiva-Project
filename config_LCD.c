@@ -27,6 +27,7 @@ void LCD_Cmd(unsigned char command){
 	if(command <4) delay_milli(2); else delay_micro(37);
 }
 void LCD_Data(unsigned char data){
+	GPIOA ->DATA =0x20; //RS=1, E=0,RW=0
 	GPIOB->DATA =data;
 	GPIOA->DATA |= 0x80;
 	GPIOA->DATA =0x00;
