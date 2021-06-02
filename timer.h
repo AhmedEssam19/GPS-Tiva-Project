@@ -1,3 +1,4 @@
+#include "define_pins.h"
 void delay_init(void);
 void delay(int n);
 void delay_milli(int n);
