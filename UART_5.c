@@ -17,3 +17,17 @@ void UART5_Init(void)
     GPIO_PORTE_PCTL_R |= (GPIO_PORTE_PCTL_R & 0xFF00FFFF) | (GPIO_PCTL_PE4_U5RX | GPIO_PCTL_PE5_U5TX);
     GPIO_PORTE_DEN_R |= GPIO_PE54_M;
 }
+
+unsigned int UART5_Available(void){
+	return ((UART5_FR_R&UART_FR_RXFE) == UART_FR_RXFE) ? 0 : 1;
+}
+
+void UART5_WRITE(unsigned int data){
+	while((UART5_FR_R&UART_FR_TXFF) != 0);
+	UART5_DR_R = data;
+}
+
+unsigned int UART5_READ(void){
+	while(UART5_Available() != 1 )	;
+	return (unsigned int) UART5_DR_R&0xFF;
+}
