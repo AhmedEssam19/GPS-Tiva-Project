@@ -1,0 +1,54 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Project:</h2>
+C:\Keil\EE319Kware\PeriodicSysTickInts_4C123\GpsProject.uvproj
+Project File Date:  06/10/2021
+
+<h2>Output:</h2>
+Rebuild target 'PeriodicSysTickInts'
+assembling startup.s...
+compiling Delays.c...
+compiling UART_5.c...
+compiling UART_0.c...
+includes\UART\../LEDs/LEDs.h(15): warning:  #1-D: last line of file ends without a newline
+  #endif
+includes\UART\UART_0.c: 1 warning, 0 errors
+compiling DoubleToString.c...
+compiling LEDs.c...
+includes\LEDs\LEDs.c(10): warning:  #550-D: variable "delay" was set but never used
+      uint32_t delay;
+includes\LEDs\LEDs.c: 1 warning, 0 errors
+compiling GPS_Calculations.c...
+includes\GPS_Calculations\../UART/UART_0.h(9): warning:  #1295-D: Deprecated declaration SystemInit - give arg types
+  void SystemInit();
+includes\GPS_Calculations\GPS_Calculations.c: 1 warning, 0 errors
+compiling Point.c...
+compiling config_LCD.c...
+compiling display.c...
+compiling man_string.c...
+compiling timer.c...
+compiling GpsProject_main.c...
+.\includes\Delays\tm4c123gh6pm.h(701): warning:  #47-D: incompatible redefinition of macro "GPIO_PORTF_DATA_R" (declared at line 2 of "GpsProject_main.c")
+  #define GPIO_PORTF_DATA_R       (*((volatile unsigned long *)0x400253FC))
+.\includes\Delays\tm4c123gh6pm.h(702): warning:  #47-D: incompatible redefinition of macro "GPIO_PORTF_DIR_R" (declared at line 3 of "GpsProject_main.c")
+  #define GPIO_PORTF_DIR_R        (*((volatile unsigned long *)0x40025400))
+.\includes\Delays\tm4c123gh6pm.h(718): warning:  #47-D: incompatible redefinition of macro "GPIO_PORTF_DEN_R" (declared at line 4 of "GpsProject_main.c")
+  #define GPIO_PORTF_DEN_R        (*((volatile unsigned long *)0x4002551C))
+.\includes\Delays\tm4c123gh6pm.h(2109): warning:  #47-D: incompatible redefinition of macro "SYSCTL_RCGCGPIO_R" (declared at line 1 of "GpsProject_main.c")
+  #define SYSCTL_RCGCGPIO_R       (*((volatile unsigned long *)0x400FE608))
+includes/LEDs/LEDs.h(15): warning:  #1-D: last line of file ends without a newline
+  #endif
+includes/GPS_Calculations/GPS_Calculations.h(4): warning:  #1295-D: Deprecated declaration read_from_GPS - give arg types
+  struct Point read_from_GPS();
+includes/UART/Uart_0.h(9): warning:  #1295-D: Deprecated declaration SystemInit - give arg types
+  void SystemInit();
+GpsProject_main.c(37): warning:  #177-D: variable "test" was declared but never referenced
+        char *test;
+GpsProject_main.c(39): warning:  #177-D: variable "write" was declared but never referenced
+        char *write = "finally";
+GpsProject_main.c: 9 warnings, 0 errors
+linking...
+Program Size: Code=18848 RO-data=1000 RW-data=4 ZI-data=16996  
+".\PeriodicSysTickInts.axf" - 0 Error(s), 12 Warning(s).

@@ -1,0 +1,12 @@
+.\gps_calculations.o: includes\GPS_Calculations\GPS_Calculations.c
+.\gps_calculations.o: C:\Keil\ARM\ARMCC\bin\..\include\stdio.h
+.\gps_calculations.o: C:\Keil\ARM\ARMCC\bin\..\include\math.h
+.\gps_calculations.o: C:\Keil\ARM\ARMCC\bin\..\include\string.h
+.\gps_calculations.o: C:\Keil\ARM\ARMCC\bin\..\include\stdlib.h
+.\gps_calculations.o: C:\Keil\ARM\ARMCC\bin\..\include\stdbool.h
+.\gps_calculations.o: C:\Keil\ARM\ARMCC\bin\..\include\inttypes.h
+.\gps_calculations.o: C:\Keil\ARM\ARMCC\bin\..\include\stdint.h
+.\gps_calculations.o: includes\GPS_Calculations\../UART/UART_0.h
+.\gps_calculations.o: includes\GPS_Calculations\../UART/UART_5.h
+.\gps_calculations.o: includes\GPS_Calculations\../double_to_string/DoubleToString.h
+.\gps_calculations.o: includes\GPS_Calculations\../Point/Point.h
